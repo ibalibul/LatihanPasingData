@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EksplicitActivity">
+
+    <!--        Hasil -->
+    <TextView
+        android:id="@+id/tv_hasil"
+        android:text="Hasil :"
+        android:textSize="20dp"
+        android:layout_margin="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <!--    Hasil  Umur anda  -->
+    <TextView
+        android:id="@+id/namaMhs_pre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_hasil"
+        android:text="Umur Anda  : "
+        android:textSize="15dp" />
+
+    <!--       Hasil Tinggi anda -->
+
+    <TextView
+        android:id="@+id/tv_umurHasil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_hasil"
+        android:layout_marginLeft="9dp"
+        android:layout_marginTop="7dp"
+        android:layout_toRightOf="@+id/namaMhs_pre"
+        android:text=" - "
+        android:textSize="15dp" />
+
+    <!--      Hasil  Berat Badan -->
+
+    <TextView
+        android:id="@+id/tv_Tinggi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/namaMhs_pre"
+        android:layout_marginTop="9dp"
+        android:text="Tinggi Badan: "
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/tv_TinggiHasil"
+        android:layout_width="9dp"
+        android:layout_height="10dp"
+        android:layout_below="@+id/tv_umurHasil"
+        android:layout_marginLeft="11dp"
+        android:layout_marginTop="4dp"
+        android:layout_toRightOf="@+id/namaMhs_pre"
+        android:text="   - "
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/tv_HBB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_TinggiHasil"
+        android:layout_marginTop="21dp"
+        android:text="Berat Badan: "
+        android:textSize="15dp" />
+
+    <!--        Hasil BMI Anda -->
+
+    <!--        Kategori -->
+
+    <TextView
+        android:id="@+id/tv_BBHasil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_TinggiHasil"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="23dp"
+        android:layout_toRightOf="@+id/namaMhs_pre"
+        android:text=" - "
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/tv_HBmi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_HBB"
+        android:layout_marginTop="19dp"
+        android:text="BMI Anda: "
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/tv_BMiHasil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_BBHasil"
+        android:layout_marginLeft="-9dp"
+        android:layout_marginTop="23dp"
+        android:layout_toRightOf="@+id/namaMhs_pre"
+        android:text=" - "
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/tv_Kategori"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_HBmi"
+        android:layout_marginTop="19dp"
+        android:text="Kategori: "
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/tv_KategoriHasil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_BMiHasil"
+        android:layout_marginLeft="-4dp"
+        android:layout_marginTop="19dp"
+        android:layout_toRightOf="@+id/namaMhs_pre"
+        android:text=" - "
+        android:textSize="15dp" />
+
+</RelativeLayout>

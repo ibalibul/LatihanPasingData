@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="50dp"
+        android:textStyle="bold"
+        android:text="Kalkulator"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:padding="20dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="5dp">
+
+        <!--        Umur -->
+        <TextView
+            android:id="@+id/tv_umur"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Umur : "
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/ed_umur"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp" />
+
+        <TextView
+            android:id="@+id/tv_tahun"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/ed_umur"
+            android:text="Tahun"
+            android:textSize="20dp" />
+
+        <!--        TinggiBadan -->
+
+        <TextView
+            android:id="@+id/tv_tbadan"
+            android:layout_below="@+id/ed_umur"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tinggi Badan  : "
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/ed_tbadan"
+            android:layout_width="215dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ed_umur"
+            android:layout_marginLeft="127dp"
+            android:layout_marginTop="0dp" />
+
+        <TextView
+            android:id="@+id/tv_tCm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_tahun"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="29dp"
+            android:layout_toRightOf="@+id/ed_umur"
+            android:text="Cm"
+            android:textSize="20dp" />
+
+        <!--        Berat Badan-->
+        <TextView
+            android:id="@+id/tv_BBadan"
+            android:layout_below="@+id/ed_tbadan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Berat Badan  : "
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/ed_Bbadan"
+            android:layout_width="215dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ed_tbadan"
+            android:layout_marginLeft="127dp"
+            android:layout_marginTop="0dp" />
+
+        <TextView
+            android:id="@+id/tv_BeratBadan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_tCm"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="29dp"
+            android:layout_toRightOf="@+id/ed_umur"
+            android:text="Kg"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/btn_hitung"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_BeratBadan"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:text="Hitung" />
+
+        <Button
+            android:id="@+id/btn_Reset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_BeratBadan"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_toRightOf="@+id/btn_hitung"
+            android:text="Reset" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>
